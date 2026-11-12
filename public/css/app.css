@@ -1,0 +1,51 @@
+:root {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #17212b;
+    background: #f6f8fb;
+    font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+a { color: #1859aa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.shell { max-width: 1080px; margin: auto; padding: 0 24px; }
+.topbar { background: #fff; border-bottom: 1px solid #e5eaf0; }
+.topbar .shell { display: flex; justify-content: space-between; align-items: center; min-height: 68px; gap: 20px; }
+.brand { font-size: 1.2rem; font-weight: 800; letter-spacing: -.03em; color: #17212b; }
+.nav { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.nav form { margin: 0; }
+.link-button { border: 0; background: none; color: #1859aa; cursor: pointer; font: inherit; padding: 0; }
+
+.main { padding: 64px 24px; }
+.card { background: #fff; border: 1px solid #e5eaf0; border-radius: 16px; box-shadow: 0 12px 36px rgba(20, 35, 55, .06); padding: 32px; }
+.auth-card { max-width: 440px; margin: 0 auto; }
+h1 { font-size: 1.8rem; letter-spacing: -.04em; margin: 0 0 10px; }
+p { color: #566473; line-height: 1.6; }
+.subtitle { margin: 0 0 28px; }
+
+.field { margin-bottom: 18px; }
+label { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 7px; }
+input:not([type=checkbox]) { width: 100%; border: 1px solid #ccd5df; border-radius: 9px; padding: 12px 13px; font: inherit; color: #17212b; background: #fff; }
+input:focus { outline: 2px solid #93bbec; border-color: #286ab8; }
+.error { color: #a52828; font-size: .86rem; margin: 6px 0 0; }
+.status { background: #e8f7ed; border: 1px solid #b8dfc2; color: #19652d; padding: 12px; border-radius: 9px; margin-bottom: 20px; }
+.button { display: inline-block; background: #1859aa; color: #fff; border: 1px solid #1859aa; border-radius: 9px; padding: 11px 18px; font: inherit; font-weight: 650; cursor: pointer; text-align: center; }
+.button:hover { background: #124783; color: #fff; text-decoration: none; }
+.button.full { width: 100%; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 22px; font-size: .92rem; }
+.check { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 400; }
+.footer-note { font-size: .93rem; text-align: center; margin: 22px 0 0; }
+
+.hero { max-width: 680px; margin: 60px auto; text-align: center; }
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+.hero .button { margin-top: 15px; }
+.muted { color: #647385; }
+
+@media (max-width: 600px) {
+    .main { padding: 36px 16px; }
+    .card { padding: 24px; }
+    .topbar .shell { padding: 12px 16px; }
+    .nav { gap: 10px; }
+}
